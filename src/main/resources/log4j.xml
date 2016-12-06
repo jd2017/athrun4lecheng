@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<!--定义可以将日志输出到控制台和日志文件中  -->  
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+<appender name="FILE" class="org.apache.log4j.RollingFileAppender">
+	<param name="Encoding" value="utf-8" />
+    <param name="File" value="${user.home}/log/runtime.log" />
+    <param name="MaxFileSize" value="1MB" />
+    <param name="MaxBackupIndex" value="10" />
+    <layout class="org.apache.log4j.PatternLayout">
+        <param name="ConversionPattern" value="[%-5p] %d{yyyy-MM-dd HH:mm:ss} %c{3}.%M() --> %m%n" />
+    </layout>
+</appender>
+
+<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+    <layout class="org.apache.log4j.PatternLayout">
+        <param name="ConversionPattern" value="[%-5p] %d{yyyy-MM-dd HH:mm:ss} %c{3}.%M() --> %m%n" />
+    </layout>
+</appender>
+
+<!--通过<logger></logger>的定义可以将各个包中的类日志输出到不同的日志文件中-->     
+ <!-- <logger name="test.ios" additivity="false">        
+        <level value="DEBUG" />        
+        <appender-ref ref="CONSOLE" /> 
+        <appender-ref ref="FILE" />        
+               
+    </logger>   -->  
+
+<root>
+    <priority value="INFO" />
+    <appender-ref ref="CONSOLE" />
+    <appender-ref ref="FILE" />        
+</root>
+
+</log4j:configuration>

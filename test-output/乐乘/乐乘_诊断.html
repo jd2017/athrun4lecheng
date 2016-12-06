@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>TestNG:  乐乘|诊断</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>乐乘|诊断</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Sep 09 15:22:16 GMT+08:00 2014</td>
+</tr>
+<tr><td>Total time:</td><td>174 seconds (174919 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.lecheng.diagnose.TheNotConOBD.toNotConOBDTest()'><b>toNotConOBDTest</b><br>Test class: test.lecheng.diagnose.TheNotConOBD<br>Parameters: {测试结果=PASS, 案例编号=diagnose案例-001_01, 预期输出=界面显示未诊断提示：, 方法名=toNotConOBDTest, 类名=test.lecheng.diagnose.TheNotConOBD, 账户=账户2, 测试时间=2014-09-09 15:22:16, 输入项=[案例编号=diagnose案例-001_01,预期输出=界面显示未诊断提示：,账户=账户2,编号备注=,导航栏名称=首页|乐乘|诊断|iOBD,], 编号备注=, 导航栏名称=首页|乐乘|诊断|iOBD}</td>
+<td></td>
+<td>26</td>
+<td>test.lecheng.diagnose.TheNotConOBD[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.diagnose.TheNotConOBD.toNotConOBDTest()'><b>toNotConOBDTest</b><br>Test class: test.lecheng.diagnose.TheNotConOBD<br>Parameters: {测试结果=PASS, 案例编号=diagnose案例-005/6/9, 预期输出=1.跳转至登录-绑定引导界面, 方法名=toNotConOBDTest, 类名=test.lecheng.diagnose.TheNotConOBD, 账户=账户1, 测试时间=2014-09-09 15:22:45, 输入项=[案例编号=diagnose案例-005/6/9,预期输出=1.跳转至登录-绑定引导界面,账户=账户1,编号备注=5、6、9诊断数据相同,导航栏名称=首页|乐乘|诊断|iOBD,], 编号备注=5、6、9诊断数据相同, 导航栏名称=首页|乐乘|诊断|iOBD}</td>
+<td></td>
+<td>39</td>
+<td>test.lecheng.diagnose.TheNotConOBD[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.diagnose.TheNotConOBD.toNotConOBDTest()'><b>toNotConOBDTest</b><br>Test class: test.lecheng.diagnose.TheNotConOBD<br>Parameters: {测试结果=PASS, 案例编号=diagnose案例-012/013, 预期输出=返回主界面、弹窗提示框如下, 方法名=toNotConOBDTest, 类名=test.lecheng.diagnose.TheNotConOBD, 账户=账户2, 测试时间=2014-09-09 15:23:26, 输入项=[案例编号=diagnose案例-012/013,预期输出=返回主界面、弹窗提示框如下,账户=账户2,编号备注=12、13覆盖案例,导航栏名称=首页|乐乘|诊断|初始界面,], 编号备注=12、13覆盖案例, 导航栏名称=首页|乐乘|诊断|初始界面}</td>
+<td></td>
+<td>48</td>
+<td>test.lecheng.diagnose.TheNotConOBD[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.diagnose.TheNotConOBD.toNotConOBDTest()'><b>toNotConOBDTest</b><br>Test class: test.lecheng.diagnose.TheNotConOBD<br>Parameters: {测试结果=PASS, 案例编号=diagnose案例-032, 预期输出=提示不符合条件，不能检测, 方法名=toNotConOBDTest, 类名=test.lecheng.diagnose.TheNotConOBD, 账户=账户2, 测试时间=2014-09-09 15:24:15, 输入项=[案例编号=diagnose案例-032,预期输出=提示不符合条件，不能检测,账户=账户2,编号备注=,导航栏名称=首页|乐乘|诊断|车况检测,], 编号备注=, 导航栏名称=首页|乐乘|诊断|车况检测}</td>
+<td></td>
+<td>52</td>
+<td>test.lecheng.diagnose.TheNotConOBD[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+</table><p>
+</body>
+</html>

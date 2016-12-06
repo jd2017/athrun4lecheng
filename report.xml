@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="testoutput" name="lecheng">
+	<tstamp>
+		<format property="CURTIME" pattern="yyyyMMdd" locale="us" />
+	</tstamp>
+	<echo message="${CURTIME}" />
+	<property name="base.dir" value="${user.dir}/" />
+	<property name="output.dir" value="${base.dir}/target/surefire-reports/" />
+	<!--property name="output.dir" value="${base.dir}/test-output/" /-->
+	<property name="lib.dir" value="${base.dir}/lib" />
+
+	<property name="main.resources.dir" value="${base.dir}/src/main/resources/" />
+	<path id="test.classpath">
+		<fileset dir="${lib.dir}" includes="*.jar" />
+	</path>
+
+	<target name="testoutput">
+		<echo message="------------------------------------------------------------------------" />
+		<echo message="TestNG报表优化" />
+		<xslt in="${output.dir}/testng-results.xml" style="${main.resources.dir}/testng-results.xsl" 
+			out="${output.dir}/AutoReport4Ios.html">
+			<param name="testNgXslt.outputDir" expression="${output.dir}" />
+			<param name="testNgXslt.showRuntimeTotals" expression="true" />
+			<classpath refid="test.classpath" />
+		</xslt>
+		<echo message="------------------------------------------------------------------------" />
+	</target>
+
+</project>

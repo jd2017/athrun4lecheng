@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-乐乘">
+              <span class="suite-name border-failed">乐乘</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-乐乘">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-乐乘">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-乐乘">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-乐乘">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-乐乘">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-乐乘">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-乐乘">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-乐乘" class="hide-methods failed suite-乐乘"> (hide)</a> <!-- hide-methods failed suite-乐乘 -->
+                      <a href="#" panel-name="suite-乐乘" class="show-methods failed suite-乐乘"> (show)</a> <!-- show-methods failed suite-乐乘 -->
+                    </span>
+                    <div class="method-list-content failed suite-乐乘">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-乐乘" title="test.lecheng.login.TheLoginTest" hash-for-method="toLoginTest({实际输出=［测试脚本]出现异常，案例执行失败！java.lang.ArrayIndexOutOfBoundsException: 3, 测试结果=FAIL, 案例编号=自动化案例-001, 姓名=,...)">toLoginTest({实际输出=［测试脚本]出现异常，案例执行失败！java.lang.ArrayIndexOutOfBoundsException: 3, 测试结果=FAIL, 案例编号=自动化案例-001, 姓名=,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-乐乘 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-乐乘" class="panel 乐乘">
+          <div class="suite-乐乘-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.lecheng.login.TheLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="toLoginTest({实际输出=［测试脚本]出现异常，案例执行失败！java.lang.ArrayIndexOutOfBoundsException: 3, 测试结果=FAIL, 案例编号=自动化案例-001, 姓名=,...)">
+                  </a> <!-- toLoginTest({实际输出=［测试脚本]出现异常，案例执行失败！java.lang.ArrayIndexOutOfBoundsException: 3, 测试结果=FAIL, 案例编号=自动化案例-001, 姓名=,...) -->
+                  <span class="method-name">toLoginTest</span>
+                  <span class="parameters">({实际输出=［测试脚本]出现异常，案例执行失败！java.lang.ArrayIndexOutOfBoundsException: 3, 测试结果=FAIL, 案例编号=自动化案例-001, 姓名=, 预期输出=登陆后，正常退出, 用户名=1000000, 类名=test.lecheng.login.TheLoginTest, 方法名=toLoginTest, 输入项=[姓名=,案例编号=自动化案例-001,用户名=1000000,预期输出=登陆后，正常退出,案例编写人=jinde,账户=账户5,密码=123456,导航栏名称=首页|乐乘|登录,], 密码=123456, 导航栏名称=首页|乐乘|登录, 案例编写人=jinde, 账户=账户5, 测试时间=2016-12-06 15:58:49})</span>
+                  <div class="stack-trace">java.lang.ArrayIndexOutOfBoundsException: 3
+	at carsmart.lecheng.login.Login.toLogin(Login.java:35)
+	at test.lecheng.login.TheLoginTest.toLoginTest(TheLoginTest.java:26)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-乐乘-class-failed -->
+        </div> <!-- panel 乐乘 -->
+        <div panel-name="test-xml-乐乘" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/iosTest/Desktop/bai/Workspaces/lechengproject/lecheng/src/test/resources/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;乐乘&quot;&gt;
+  &lt;test name=&quot;乐乘｜登陆&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.lecheng.login.TheLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 乐乘｜登陆 --&gt;
+&lt;/suite&gt; &lt;!-- 乐乘 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-乐乘" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for 乐乘</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">乐乘｜登陆 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-乐乘" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for 乐乘</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">login</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">toLoginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-乐乘" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for 乐乘</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_乐乘');
+function tableData_乐乘() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'toLoginTest')
+data.setCell(0, 2, 'test.lecheng.login.TheLoginTest')
+data.setCell(0, 3, 27697);
+window.suiteTableData['乐乘']= { tableData: data, tableDiv: 'times-div-乐乘'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <div id="times-div-乐乘">
+              </div> <!-- times-div-乐乘 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-乐乘" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for 乐乘</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-乐乘" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-乐乘" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.lecheng.login.TheLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">prepareResource</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1348 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">toLoginTest({实际输出=［测试脚本]出现异常，案例执行失败！java.lang.ArrayIndexOutOfBoundsException: 3, 测试结果=FAIL, 案例编号=自动化案例-001, 姓名=,...)</span>
+                <span class="method-start">1441 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29159 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">aftersuite</span>
+                <span class="method-start">32692 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

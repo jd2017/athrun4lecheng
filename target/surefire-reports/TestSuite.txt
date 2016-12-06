@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 33.748 sec <<< FAILURE!
+toLoginTest on test.lecheng.login.TheLoginTest[name=InstrumentDriverTestCase,maxpri=10](test.lecheng.login.TheLoginTest)  Time elapsed: 27.717 sec  <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: 3
+	at carsmart.lecheng.login.Login.toLogin(Login.java:35)
+	at test.lecheng.login.TheLoginTest.toLoginTest(TheLoginTest.java:26)
+

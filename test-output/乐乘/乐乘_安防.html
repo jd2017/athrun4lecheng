@@ -1,0 +1,260 @@
+<html>
+<head>
+<title>TestNG:  乐乘|安防</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>乐乘|安防</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Sep 09 15:25:10 GMT+08:00 2014</td>
+</tr>
+<tr><td>Total time:</td><td>1009 seconds (1009250 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {实际输出=［验证点］不通过，案例执行失败！java.lang.AssertionError: 未获取关闭勿扰开关文本 expected object to not be null, 测试结果=FAIL, 案例编号=security案例-019, 预期输出=1.关闭成功，提示“勿扰功能关闭, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:36:17, 输入项=[案例编号=security案例-019,预期输出=1.关闭成功，提示“勿扰功能关闭,账户=账户2,编号备注=,导航栏名称=首页|乐乘|安防|安防设置,], 编号备注=, 导航栏名称=首页|乐乘|安防|安防设置}</td>
+<td><div><pre>java.lang.AssertionError: 未获取关闭勿扰开关文本 expected object to not be null
+	at test.lecheng.security.TheSecurityTest.toSwitchTest(TheSecurityTest.java:93)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1458751852", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1458751852'><pre>java.lang.AssertionError: 未获取关闭勿扰开关文本 expected object to not be null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotNull(Assert.java:404)
+	at test.lecheng.security.TheSecurityTest.toSwitchTest(TheSecurityTest.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>48</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {实际输出=［验证点］不通过，案例执行失败！java.lang.AssertionError: 判断 安防开关已关闭信息 expected object to not be null, 测试结果=FAIL, 案例编号=security案例-029/32, 预期输出=1.十次以上开启安防, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:40:26, 输入项=[案例编号=security案例-029/32,预期输出=1.十次以上开启安防,账户=账户2,编号备注=029与032一起测试,导航栏名称=首页|乐乘|安防|安防设置,], 编号备注=029与032一起测试, 导航栏名称=首页|乐乘|安防|安防设置}</td>
+<td><div><pre>java.lang.AssertionError: 判断 安防开关已关闭信息 expected object to not be null
+	at test.lecheng.security.TheSecurityTest.toSwitchTest(TheSecurityTest.java:132)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1992504715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1992504715'><pre>java.lang.AssertionError: 判断 安防开关已关闭信息 expected object to not be null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotNull(Assert.java:404)
+	at test.lecheng.security.TheSecurityTest.toSwitchTest(TheSecurityTest.java:132)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>91</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-001, 预期输出=安防主开关状态,1.关闭状态, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户1, 测试时间=2014-09-09 15:25:11, 输入项=[案例编号=security案例-001,预期输出=安防主开关状态,1.关闭状态,账户=账户1,编号备注=,导航栏名称=首页|乐乘|安防|初始状态,], 编号备注=, 导航栏名称=首页|乐乘|安防|初始状态}</td>
+<td></td>
+<td>37</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-003, 预期输出=1.开启成功，提示:安防开关设置成功, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:25:50, 输入项=[案例编号=security案例-003,预期输出=1.开启成功，提示:安防开关设置成功,账户=账户2,编号备注=,导航栏名称=首页|乐乘|安防|初始状态,], 编号备注=, 导航栏名称=首页|乐乘|安防|初始状态}</td>
+<td></td>
+<td>52</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-004, 预期输出=1.关闭成功,安防开关设置成功, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:26:45, 输入项=[案例编号=security案例-004,预期输出=1.关闭成功,安防开关设置成功,账户=账户2,编号备注=,导航栏名称=首页|乐乘|安防|初始状态,], 编号备注=, 导航栏名称=首页|乐乘|安防|初始状态}</td>
+<td></td>
+<td>51</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-005, 预期输出=1.进入初始安装-绑定界面, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户1, 测试时间=2014-09-09 15:27:38, 输入项=[案例编号=security案例-005,预期输出=1.进入初始安装-绑定界面,账户=账户1,编号备注=,导航栏名称=首页|乐乘|安防|进入安防,], 编号备注=, 导航栏名称=首页|乐乘|安防|进入安防}</td>
+<td></td>
+<td>40</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-006, 预期输出=1.进入初始安装-绑定界面, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户1, 测试时间=2014-09-09 15:28:20, 输入项=[案例编号=security案例-006,预期输出=1.进入初始安装-绑定界面,账户=账户1,编号备注=,导航栏名称=首页|乐乘|安防|进入安防,], 编号备注=, 导航栏名称=首页|乐乘|安防|进入安防}</td>
+<td></td>
+<td>22</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-007, 预期输出=1.登录且绑定
+2.安防关闭
+1.可成功进入安防界面, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:28:44, 输入项=[案例编号=security案例-007,预期输出=1.登录且绑定
+2.安防关闭
+1.可成功进入安防界面,账户=账户2,编号备注=010/008/007关联,导航栏名称=首页|乐乘|安防|进入安防,], 编号备注=010/008/007关联, 导航栏名称=首页|乐乘|安防|进入安防}</td>
+<td></td>
+<td>28</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-008, 预期输出=1.登录且绑定
+2.安防关闭
+1.可成功进入安防界面, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:29:14, 输入项=[案例编号=security案例-008,预期输出=1.登录且绑定
+2.安防关闭
+1.可成功进入安防界面,账户=账户2,编号备注=010/008/007关联,导航栏名称=首页|乐乘|安防|进入安防,], 编号备注=010/008/007关联, 导航栏名称=首页|乐乘|安防|进入安防}</td>
+<td></td>
+<td>41</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-010, 预期输出=1,未开启GPS进入安防
+2,可成功进入安防界面, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:29:57, 输入项=[案例编号=security案例-010,预期输出=1,未开启GPS进入安防
+2,可成功进入安防界面,账户=账户2,编号备注=,导航栏名称=首页|乐乘|安防|进入安防,], 编号备注=, 导航栏名称=首页|乐乘|安防|进入安防}</td>
+<td></td>
+<td>41</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-012, 预期输出=1.成功退出安防界面, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:30:40, 输入项=[案例编号=security案例-012,预期输出=1.成功退出安防界面,账户=账户2,编号备注=,导航栏名称=首页|乐乘|安防|进入安防,], 编号备注=, 导航栏名称=首页|乐乘|安防|进入安防}</td>
+<td></td>
+<td>40</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-013, 预期输出=1.能够进入安防设置界面, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:31:22, 输入项=[案例编号=security案例-013,预期输出=1.能够进入安防设置界面,账户=账户2,编号备注=,导航栏名称=首页|乐乘|安防|安防设置,], 编号备注=, 导航栏名称=首页|乐乘|安防|安防设置}</td>
+<td></td>
+<td>47</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-014, 预期输出=通过Menu菜单进入安防设置, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:32:12, 输入项=[案例编号=security案例-014,预期输出=通过Menu菜单进入安防设置,账户=账户2,编号备注=,导航栏名称=首页|乐乘|安防|安防设置,], 编号备注=, 导航栏名称=首页|乐乘|安防|安防设置}</td>
+<td></td>
+<td>43</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-015, 预期输出=1.显示为默认时段：07:00-21:00, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:32:57, 输入项=[案例编号=security案例-015,预期输出=1.显示为默认时段：07:00-21:00,账户=账户2,编号备注=,导航栏名称=首页|乐乘|安防|安防设置,], 编号备注=, 导航栏名称=首页|乐乘|安防|安防设置}</td>
+<td></td>
+<td>45</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-016, 预期输出=勿扰时段开关默认状态，关闭, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:33:45, 输入项=[案例编号=security案例-016,预期输出=勿扰时段开关默认状态，关闭,账户=账户2,编号备注=,导航栏名称=首页|乐乘|安防|安防设置,], 编号备注=, 导航栏名称=首页|乐乘|安防|安防设置}</td>
+<td></td>
+<td>46</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-017, 预期输出=1.正确显示“勿扰时段内将不推送告警消息，请谨慎设置”, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:34:34, 输入项=[案例编号=security案例-017,预期输出=1.正确显示“勿扰时段内将不推送告警消息，请谨慎设置”,账户=账户2,编号备注=,导航栏名称=首页|乐乘|安防|安防设置,], 编号备注=, 导航栏名称=首页|乐乘|安防|安防设置}</td>
+<td></td>
+<td>45</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-018, 预期输出=1.开启成功，提示“勿扰功能开启”, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:35:21, 输入项=[案例编号=security案例-018,预期输出=1.开启成功，提示“勿扰功能开启”,账户=账户2,编号备注=,导航栏名称=首页|乐乘|安防|安防设置,], 编号备注=, 导航栏名称=首页|乐乘|安防|安防设置}</td>
+<td></td>
+<td>53</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-020, 预期输出=1.显示为默认时段：07:00-21:00
+2.可以设置成功, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:37:08, 输入项=[案例编号=security案例-020,预期输出=1.显示为默认时段：07:00-21:00
+2.可以设置成功,账户=账户2,编号备注=20、21关联,导航栏名称=首页|乐乘|安防|安防设置,], 编号备注=20、21关联, 导航栏名称=首页|乐乘|安防|安防设置}</td>
+<td></td>
+<td>65</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-021, 预期输出=1.仍为之前设置的生效时段, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:38:15, 输入项=[案例编号=security案例-021,预期输出=1.仍为之前设置的生效时段,账户=账户2,编号备注=20、21关联,导航栏名称=首页|乐乘|安防|安防设置,], 编号备注=20、21关联, 导航栏名称=首页|乐乘|安防|安防设置}</td>
+<td></td>
+<td>64</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+<tr>
+<td title='test.lecheng.security.TheSecurityTest.toSwitchTest()'><b>toSwitchTest</b><br>Test class: test.lecheng.security.TheSecurityTest<br>Parameters: {测试结果=PASS, 案例编号=security案例-024, 预期输出=网络正常，设置告警级别，2.可以设置成功, 方法名=toSwitchTest, 类名=test.lecheng.security.TheSecurityTest, 账户=账户2, 测试时间=2014-09-09 15:39:23, 输入项=[案例编号=security案例-024,预期输出=网络正常，设置告警级别，2.可以设置成功,账户=账户2,编号备注=,导航栏名称=首页|乐乘|安防|安防设置,], 编号备注=, 导航栏名称=首页|乐乘|安防|安防设置}</td>
+<td></td>
+<td>61</td>
+<td>test.lecheng.security.TheSecurityTest[name=InstrumentDriverTestCase,maxpri=10]</td></tr>
+</table><p>
+</body>
+</html>

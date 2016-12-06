@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [乐乘]">
+  <test name="乐乘|安防(failed)">
+    <classes>
+      <class name="test.lecheng.diagnose.TheNotConOBD">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.lecheng.diagnose.TheNotConOBD -->
+      <class name="test.lecheng.security.TheSecurityTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="toSwitchTest" invocation-numbers="15 19"/>
+        </methods>
+      </class> <!-- test.lecheng.security.TheSecurityTest -->
+      <class name="test.lecheng.report.TheCarReportTest">
+        <methods>
+          <include name="prepareResource"/>
+          <include name="setUp"/>
+          <include name="aftersuite"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.lecheng.report.TheCarReportTest -->
+    </classes>
+  </test> <!-- 乐乘|安防(failed) -->
+</suite> <!-- Failed suite [乐乘] -->

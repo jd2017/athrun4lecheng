@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [乐乘]">
+  <test name="乐乘｜登陆(failed)">
+    <classes>
+      <class name="test.lecheng.login.TheLoginTest">
+        <methods>
+          <include name="prepareResource"/>
+          <include name="setUp"/>
+          <include name="toLoginTest" invocation-numbers="0"/>
+          <include name="aftersuite"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.lecheng.login.TheLoginTest -->
+    </classes>
+  </test> <!-- 乐乘｜登陆(failed) -->
+</suite> <!-- Failed suite [乐乘] -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="乐乘" parallel="false" verbose="1">
+	<!-- preserve-order=true用于设置test方法按顺序执行 -->	
+ 	<test name="乐乘｜登陆" preserve-order="true">
+		<classes>
+			<class name="test.lecheng.login.TheLoginTest" />
+		</classes>
+	</test>
+ 	<!--  
+ 	<test name="乐乘|诊断" preserve-order="true">
+		<classes>
+			<class name="test.lecheng.diagnose.TheNotConOBD" />
+		</classes>
+	</test>
+	<test name="乐乘|安防" preserve-order="true">
+		<classes>
+			<class name="test.lecheng.security.TheSecurityTest" />
+		</classes>
+	</test>
+	<test name="乐乘|行程报告" preserve-order="true">
+		<classes>
+			<class name="test.lecheng.report.TheCarReportTest" />
+		</classes>
+	</test>
+	-->
+</suite>
+
